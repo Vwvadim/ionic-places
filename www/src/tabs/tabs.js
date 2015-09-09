@@ -1,16 +1,21 @@
-angular.module('places')
-	.config(function ($stateProvider) {
+angular.module('places').config(function($stateProvider) {
 
 		$stateProvider
 
 			// setup an abstract state for the tabs directive
 			.state('tab', {
+			
 				url: "/tab",
 				abstract: true,
 				templateUrl: "src/tabs/tabs.html"
 			})
 			// Each tab has its own nav history stack:
 			.state('tab.my-place', {
+				data:
+				{
+					customdata2: "My Place"
+				},
+
 				url: '/my-place',
 				views: {
 					'tab-my-place': {
@@ -19,6 +24,10 @@ angular.module('places')
 				}
 			})
 			.state('tab.add-place', {
+					data:
+				{
+					customdata2: "Add Place"
+				},
 				url: '/add-place',
 				views: {
 					'tab-add-place': {
@@ -27,6 +36,10 @@ angular.module('places')
 				}
 			})
 			.state('tab.around-me', {
+					data:
+				{
+					customdata2: "Around me"
+				},
 				url: '/around-me',
 				views: {
 					'tab-around-me': {
@@ -35,6 +48,10 @@ angular.module('places')
 				}
 			})
 			.state('tab.friends', {
+					data:
+				{
+					customdata2: "My Friends"
+				},
 				url: '/friends',
 				views: {
 					'tab-friends': {
