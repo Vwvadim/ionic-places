@@ -1,0 +1,36 @@
+<ion-side-menus>
+
+<ion-side-menu side="right">
+<div class="padding">
+<button class="button icon ion-gear-a"></button>
+<h3>Salut Pouley</h3>
+<p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.</p>
+
+<div class="item range">
+  <i class="icon ion-volume-low"></i>
+  <input type="range" name="volume">
+  <i class="icon ion-volume-high"></i>
+</div>
+
+<div class="list">
+  <div class="item range range-positive">
+    <i class="icon ion-ios-sunny-outline"></i>
+    <input type="range" name="volume" min="0" max="100" value="33">
+    <i class="icon ion-ios-sunny"></i>
+  </div>
+</div>
+<button class="button button-outline button-block button-assertive" ui-sref="login">
+  Déconnexion
+</button>
+</div>
+</ion-side-menu>
+
+
+<ion-side-menu-content>
+
+<ng-include src="'src/header/header.html'" ng-controller="HeaderCtrl"></ng-include>
+<ng-include src="'src/tabs/tabs.html'" ng-controller="HeaderCtrl"></ng-include>
+
+</ion-side-menu-content>
+
+</ion-side-menus>

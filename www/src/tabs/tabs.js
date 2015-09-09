@@ -7,7 +7,7 @@ angular.module('places').config(function($stateProvider) {
 			
 				url: "/tab",
 				abstract: true,
-				templateUrl: "src/tabs/tabs.html"
+				templateUrl: "src/menu/menu.html"
 			})
 			// Each tab has its own nav history stack:
 			.state('tab.my-place', {
