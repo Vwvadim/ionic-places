@@ -13,9 +13,12 @@ angular.module('places')
       $scope.modal.show();
     });
     }
-  });
+
 
     $scope.closeModal = function() {
     $scope.modal.hide();
-  };
-    
+
+ };
+
+
+     }); 
