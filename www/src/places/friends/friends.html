@@ -3,9 +3,11 @@
       <div class="item item-divider">
           A
       </div>
-
-      <a class="item" href="#">
-          Alhan
+	
+	<div class="list">
+      <a class="item" href="#" ng-repeat="item in list">
+      	<h2>{{item.name}} {{$index}}</h2>
       </a>
+  </div>
   </ion-content>
 </ion-view>
