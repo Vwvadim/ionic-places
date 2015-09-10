@@ -8,6 +8,7 @@ angular.module('places')
 				url: "/tab",
 				abstract: true,
 				templateUrl: "src/nav/menu/menu.html"
+			
 			})
 			// Each tab has its own nav history stack:
 			.state('tab.my-place', {

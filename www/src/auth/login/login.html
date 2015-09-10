@@ -1,14 +1,14 @@
-<ion-view class="row row-no-padding">
+<ion-view ng-controller="LoginCtrl" class="row row-no-padding">
         <div class="col col-center">
             <div class="logo">
                 <i class="icon ion-ios-location"></i>
             </div>
             <div class="list">
                 <label class="item item-input">
-                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Email" ng-model="email">
                 </label>
                 <label class="item item-input">
-                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Password" ng-model="password">
                 </label>
             </div>
             <div class="padding-left padding-right">
