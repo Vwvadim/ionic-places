@@ -5,6 +5,7 @@ angular.module('places')
 			scope: {
 				onCreate: '&'
 			},
+
 			link: function ($scope, $element, $attr) {
 				function initialize() {
 					var mapOptions = {
@@ -13,6 +14,13 @@ angular.module('places')
 						mapTypeId: google.maps.MapTypeId.ROADMAP
 					};
 					var map = new google.maps.Map($element[0], mapOptions);
+
+
+
+					var oMarker = new google.maps.Marker(
+						{ 'position' : new google.maps.LatLng(48.8571098,2.2812385), // position d'ancrage du marker sur la carte
+			 				'map' : map
+		 				});
 
 					$scope.onCreate({map: map});
 

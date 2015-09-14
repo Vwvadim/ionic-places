@@ -1,5 +1,5 @@
 angular.module('places')
-	.controller('AroundMeCtrl', function($scope, $ionicLoading) {
+	.controller('AroundMeCtrl', function($scope, $ionicLoading, EventService) {
 		$scope.mapCreated = function(map) {
 			$scope.map = map;
 			$scope.centerOnMe();
@@ -24,4 +24,12 @@ angular.module('places')
 				alert('Unable to get location: ' + error.message);
 			});
 		};
+
+
+
+//Récuperation du json
+angular.forEach(EventService.jsonResult, function(value, key) {
+	console.log("item -> ",value)
+});
+
 	});

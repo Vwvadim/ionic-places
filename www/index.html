@@ -10,6 +10,10 @@
     <!-- compiled css output -->
     <link href="css/ionic.app.css" rel="stylesheet">
 
+    <!-- search Bar -->
+    <link rel="stylesheet" href="lib/ionic-filter-bar/dist/ionic.filter.bar.css">
+
+
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
     <script src="lib/lodash/lodash.js"></script>
@@ -42,13 +46,19 @@
     <script src="src/nav/menu/menu.controller.js"></script>
 
     <!-- places -->
-    <script src="src/places/mines/my-place.controller.js"></script>
+    <script src="src/places/mines/event.controller.js"></script>
+    <script src="src/places/mines/event.service.js"></script>
+    <script src="src/places/mines/groupByDate.filter.js"></script>
     <script src="src/places/around/around-me.controller.js"></script>
     <script src="src/places/around/map.js"></script>
     <script src="src/places/friends/friends.service.js"></script>
     <script src="src/places/friends/friends.controller.js"></script>
     <script src="src/places/friends/groupByFirstLetter.filter.js"></script>
     <script src="src/places/add/add-place.controller.js"></script>
+
+      <script src="src/places/singleEvent/singleEvent.service.js"></script>
+      <script src="src/places/singleEvent/singleEvent.controller.js"></script>
+    <script src="lib/ionic-filter-bar/dist/ionic.filter.bar.js"></script>
 
   </head>
   <body ng-app="places">

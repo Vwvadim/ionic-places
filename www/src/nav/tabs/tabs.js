@@ -28,18 +28,32 @@ angular.module('places')
 				}*/
 			})
 			// Each tab has its own nav history stack:
-			.state('tab.my-place', {
-				url: '/my-place',
+			.state('tab.event', {
+				url: '/event',
 				data:{
-					title:"My place"
+					title:"Events"
 				},
 				views: {
-					'tab-my-place': {
-						templateUrl: 'src/places/mines/my-place.html',
-						controller:'MyPlaceCtrl'
+					'tab-event': {
+						templateUrl: 'src/places/mines/event.html',
+						controller:'EventCtrl'
 					}
 				}
 			})
+
+			.state('tab.singleEvent', {
+				url: '/singleEvent',
+				data:{
+					title:"singleEvent"
+				},
+				views: {
+					'tab-event': {
+						templateUrl: 'src/places/singleEvent/singleEvent.html',
+						controller:'singleEventCtrl'
+					}
+				}
+			})
+
 			.state('tab.add-place', {
 				url: '/add-place',
 				data:{

@@ -14,9 +14,18 @@ $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
-$positive:                        #000000 !default;
+$positive:                        #4E8EF7 !default;
 $assertive:                       #0092bf !default;
 $balanced:                        #ffb400 !default;
+
+$item-thumbnail-width:            200px !default;
+$item-thumbnail-height:           100px !default;
+$item-thumbnail-margin:           20px !default;
+
+$item-divider-bg:                 #ecf0f1 !default;
+$item-divider-color:              #222 !default;
+$item-divider-padding:            5px 15px !default;
+
 
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
@@ -24,3 +33,4 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+@import "www/lib/ionic-filter-bar/scss/ionic.filter.bar";

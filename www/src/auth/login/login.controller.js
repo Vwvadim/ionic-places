@@ -10,7 +10,7 @@ angular.module('places')
 			LoginService.login($scope.email,$scope.password)
 				.then(function(){
 
-					$state.go('tab.my-place');
+					$state.go('tab.event');
 					$ionicLoading.hide();
 				});
 		};
@@ -29,5 +29,3 @@ angular.module('places')
 
 
 	});
-
-
