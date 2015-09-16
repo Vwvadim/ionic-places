@@ -1,25 +1,88 @@
 <ion-view>
     <ion-content class="has-header" scroll="false">
-        <div class="list">
-            <label class="item item-input item-floating-label">
-                <span class="input-label">Title</span>
-                <input type="text" placeholder="Title">
-            </label>
-            <label class="item item-input item-floating-label">
-                <span class="input-label">Description</span>
-                <input type="text" placeholder="Description">
-            </label>
+      <div class="row responsive-sm">
+<div class="col">
 
-            <div class="padding">
-                <button class="button button-block icon-right ion-camera activated"
-                        ng-click="openPicture()">Take a picture</button>
-            </div>
+  <h2 style="text-align: center;">Techno</h2>
+<div class="list card">
 
-            <div class="padding">
-                <img ng-src="{{imageSrc}}" width="100px" height="100px">
-            </div>
+  <div class="item item-avatar">
+    <img src="http://icons.iconarchive.com/icons/mattahan/ultrabuuf/256/Comics-Mask-icon.png">
+    <h3>Marty McFly</h3>
+    <p>November 05, 1955</p>
+  </div>
 
-        </div>
+  <div class="item item-body">
+    <img class="full-image" src="delorean.jpg">
+    <p>
+      This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+      the content is from a card-body consisting of an image and paragraph text. The footer
+      consists of tabs, icons aligned left, within the card-footer.
+    </p>
+    <p>
+      <a href="#" class="subdued">1 Like</a>
+      <a href="#" class="subdued">5 Comments</a>
+    </p>
+  </div>
+
+  <div class="item tabs tabs-secondary tabs-icon-left">
+    <a class="tab-item" href="#">
+      <i class="icon ion-thumbsup"></i>
+      Like
+    </a>
+    <a class="tab-item" href="#">
+      <i class="icon ion-chatbox"></i>
+      Comment
+    </a>
+    <a class="tab-item" href="#">
+      <i class="icon ion-share"></i>
+      Share
+    </a>
+  </div>
+
+</div>
+ </div>
+<div class="col">
+  <h2 style="text-align: center;">Deep House</h2>
+  <div class="list card">
+
+    <div class="item item-avatar">
+      <img src="http://icons.iconarchive.com/icons/mattahan/ultrabuuf/256/Comics-Mask-icon.png">
+      <h3>Marty McFly</h3>
+      <p>November 05, 1955</p>
+    </div>
+
+    <div class="item item-body">
+      <img class="full-image" src="delorean.jpg">
+      <p>
+        This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+        the content is from a card-body consisting of an image and paragraph text. The footer
+        consists of tabs, icons aligned left, within the card-footer.
+      </p>
+      <p>
+        <a href="#" class="subdued">1 Like</a>
+        <a href="#" class="subdued">5 Comments</a>
+      </p>
+    </div>
+
+    <div class="item tabs tabs-secondary tabs-icon-left">
+      <a class="tab-item" href="#">
+        <i class="icon ion-thumbsup"></i>
+        Like
+      </a>
+      <a class="tab-item" href="#">
+        <i class="icon ion-chatbox"></i>
+        Comment
+      </a>
+      <a class="tab-item" href="#">
+        <i class="icon ion-share"></i>
+        Share
+      </a>
+    </div>
+
+  </div>
+</div>
+</div>
     </ion-content>
     <footer class="bar bar-footer bar-clear has-tabs">
         <button class="button button-block button-positive">Add a new place</button>

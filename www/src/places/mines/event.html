@@ -6,13 +6,16 @@
 
 <div class="item item-divider">{{key}}</div>
 
-
-
 <a class="item" ng-repeat="item in value" ui-sref="tab.singleEvent">
-
-<img class=" item-thumbnail-center" ng-src="{{item.image}}">
+<div class="thumbnail_event_center">
+<img class="thumbnail_event" ng-src="{{item.image}}">
+</div>
+<div class="name_description_event">
 <h2>{{item.name}}</h2>
 <p>{{item.description}}</p>
+</div>
+<button class="button button-block button-positive icon-right ion-ios-people-outline"
+      >Voir l'Évènement</button>
 
 
 </a>

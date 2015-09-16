@@ -31,7 +31,7 @@ angular.module('places')
 			.state('tab.event', {
 				url: '/event',
 				data:{
-					title:"Events"
+					title:"Soirées"
 				},
 				views: {
 					'tab-event': {
@@ -44,7 +44,7 @@ angular.module('places')
 			.state('tab.singleEvent', {
 				url: '/singleEvent',
 				data:{
-					title:"singleEvent"
+					title:"Votre soirée"
 				},
 				views: {
 					'tab-event': {
@@ -57,7 +57,7 @@ angular.module('places')
 			.state('tab.add-place', {
 				url: '/add-place',
 				data:{
-					title:"Add place"
+					title:"Mes soirées"
 				},
 				views: {
 					'tab-add-place': {
@@ -69,7 +69,7 @@ angular.module('places')
 			.state('tab.around-me', {
 				url: '/around-me',
 				data:{
-					title:"Around me"
+					title:"Évènements près de chez moi"
 				},
 				views: {
 					'tab-around-me': {
@@ -81,7 +81,7 @@ angular.module('places')
 			.state('tab.friends', {
 				url: '/friends',
 				data:{
-					title:"Friends"
+					title:"Mes amis"
 				},
 				views: {
 					'tab-friends': {

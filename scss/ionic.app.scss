@@ -15,7 +15,7 @@ $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
 $positive:                        #4E8EF7 !default;
-$assertive:                       #0092bf !default;
+//$assertive:                       #0092bf !default;
 $balanced:                        #ffb400 !default;
 
 $item-thumbnail-width:            200px !default;
@@ -23,8 +23,43 @@ $item-thumbnail-height:           100px !default;
 $item-thumbnail-margin:           20px !default;
 
 $item-divider-bg:                 #ecf0f1 !default;
-$item-divider-color:              #222 !default;
+$item-divider-color:              #000 !default;
 $item-divider-padding:            5px 15px !default;
+$item-divider-font-size:          18px !default;
+
+$item-font-size:                  16px !default;
+$item-border-width:               1px !default;
+$item-padding:                    16px !default;
+$item-bg:                         #000000 !default;
+
+
+.item-divider {
+  text-align: center;
+}
+
+.thumbnail_event_center{
+  text-align: center;
+}
+
+.thumbnail_event {
+  width: 320px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.paragraphe_logout {
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
+  font-family: lato;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.name_description_event {
+  text-align: center;
+  display: block;
+}
 
 
 // The path for our ionicons font files, relative to the built CSS in www/css

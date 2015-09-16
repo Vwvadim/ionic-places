@@ -1,6 +1,6 @@
 <ion-modal-view ng-controller="ModalCtrl">
     <ion-header-bar class="bar bar-positive">
-        <h1 class="title">Settings</h1>
+        <h1 class="title">Réglages</h1>
         <div class="buttons">
             <i ng-click="closeModal()" class="button-icon icon ion-close"></i>
         </div>
@@ -8,10 +8,10 @@
     <ion-content>
         <div class="list">
             <div class="item item-divider">
-                Around Me
+                Autour de moi
             </div>
             <li class="item item-toggle">
-                Geolocation
+                Géolocalisation
                 <label class="toggle toggle-balanced">
                     <input type="checkbox" checked>
                     <div class="track">
@@ -21,14 +21,39 @@
             </li>
             <label class="item item-select">
                 <div class="input-label">
-                    Proximity
+                    Proximité
                 </div>
                 <select>
-                    <option>1 miles</option>
-                    <option selected>2 miles</option>
-                    <option>3 miles</option>
+                    <option>1 kms</option>
+                    <option selected>5 kms</option>
+                    <option>10 kms</option>
+                    <option>50 kms</option>
+                    <option>Partout en France</option>
+                    <option>Partout en Europe</option>
+                    <option>Partout dans le monde</option>
                 </select>
             </label>
         </div>
-    </ion-content>
+
+
+<div class="list">
+  <div class="item item-divider">
+              Lourdeur du son
+          </div>
+  <div class="item range range-positive">
+    <i class="ion-volume-low"></i>
+    <input type="range" name="volume" min="0" max="100" value="33">
+    <i class="ion-volume-high"></i>
+  </div>
+  <div class="item item-divider">
+      Taille de la soirée
+  </div>
+<div class="item range range-positive">
+  <i class="ion-person"></i>
+  <input type="range" name="volume" min="0" max="100" value="33">
+  <i class="ion-person-stalker"></i>
+</div>
+</div>
+
+</ion-content>
 </ion-modal-view>
