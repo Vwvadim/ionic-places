@@ -9,8 +9,8 @@ angular.module('places')
 			link: function ($scope, $element, $attr) {
 				function initialize() {
 					var mapOptions = {
-						center: new google.maps.LatLng(43.07493, -89.381388),
-						zoom: 16,
+						center: new google.maps.LatLng(48.8571098,2.2812385),
+						zoom: 12,
 						mapTypeId: google.maps.MapTypeId.ROADMAP
 					};
 					var map = new google.maps.Map($element[0], mapOptions);

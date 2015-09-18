@@ -6,7 +6,7 @@
 
 <div class="item item-divider">{{key}}</div>
 
-<a class="item" ng-repeat="item in value" ui-sref="tab.singleEvent">
+<a class="item" ng-repeat="item in value.list" ui-sref="tab.singleEvent({name: item.name, image: item.image, description: item.description, date: item.date, lien: item.lien})">
 <div class="thumbnail_event_center">
 <img class="thumbnail_event" ng-src="{{item.image}}">
 </div>

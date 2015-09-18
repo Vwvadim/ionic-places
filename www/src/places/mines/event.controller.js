@@ -9,7 +9,7 @@ angular.module('places')
 
 		//properties
 		EventService.getGroupedEvent().then(function(data){
-
+console.log(data);
 						$scope.grouped = data;
 						$ionicLoading.hide();
 
@@ -18,13 +18,13 @@ angular.module('places')
 		var filterBarInstance;
 
 	    $scope.showFilterBar = function () {
+
 	      filterBarInstance = $ionicFilterBar.show({
-	        items: $scope.groupBy,
+	        items: $scope.grouped,
 	        update: function (filteredItems, filterText) {
-	          $scope.groupBy = filteredItems;
-	          if (filterText) {
-	            console.log(filterText);
-	          }
+	          $scope.grouped = filteredItems;
+
+						console.log(filteredItems);
 	        }
 	      });
 	    };

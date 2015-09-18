@@ -26,10 +26,12 @@ angular.module('places')
 		};
 
 
-
+	console.log(EventService.jsonResult);
 //Récuperation du json
 angular.forEach(EventService.jsonResult, function(value, key) {
-	console.log("item -> ",value)
+
+	console.log("item ->",value.item);
+
 });
 
 	});

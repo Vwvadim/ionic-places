@@ -42,10 +42,11 @@ angular.module('places')
 			})
 
 			.state('tab.singleEvent', {
-				url: '/singleEvent',
+				url: '/singleEvent:name?image?description?date?lien',
 				data:{
 					title:"Votre soirée"
 				},
+
 				views: {
 					'tab-event': {
 						templateUrl: 'src/places/singleEvent/singleEvent.html',

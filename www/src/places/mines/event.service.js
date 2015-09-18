@@ -1,7 +1,7 @@
 angular.module('places').factory("EventService", function ($http, $q,$filter) {
 
 	return {
-		jsonResult:null,
+		jsonResult:"",
 		getGroupedEvent: function () {
 
 			var that=this;
@@ -11,7 +11,18 @@ angular.module('places').factory("EventService", function ($http, $q,$filter) {
 				that.jsonResult = result.data;
 				console.log("loaded")
 
-				return $filter('groupByDate')(result.data);
+				var grouped = $filter('groupByDate')(result.data);
+
+				angular.forEach(grouped, function(value, key) {
+
+					grouped[key] = {date:key,list:value}
+	  		console.log(key + 'groupByDate' + value);
+	});
+
+
+console.log('grouped' , grouped);
+
+				return grouped;
 			});
 
 		},
